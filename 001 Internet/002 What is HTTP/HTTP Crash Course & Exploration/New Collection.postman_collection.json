@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "1c3f17aa-ffef-4115-b598-9086a5aecf9b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://rickandmortyapi.com/api/character/5",
+					"protocol": "http",
+					"host": [
+						"rickandmortyapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"character",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
