@@ -115,3 +115,20 @@ console.log(person1.dob.getFullYear());
 console.log(person1.getMyBirthYear());
 console.log(person1.getMyFullName());
 
+console.log('');
+console.log('');
+console.log('');
+
+console.log(window);
+// single element
+console.log(document.getElementById('my-form'));
+console.log(document.querySelector('.container'));
+console.log(document.querySelector('h1'));
+// multiple element
+console.log(document.querySelectorAll('.item')); // prefered
+console.log(document.getElementsByClassName('item'));
+console.log(document.getElementsByTagName('li'));
+
+const items = document.querySelectorAll('.item');
+
+items.forEach((item) => console.log(item));
