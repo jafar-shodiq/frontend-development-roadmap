@@ -1,5 +1,6 @@
 :root {
     --primary-color: #e50914;
+    --dark-color: #141414;
 }
 
 * {
@@ -52,6 +53,7 @@ img {
     height: 100%;
     z-index: 1;
     background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000;
 }
 
 .showcase-top {
@@ -89,7 +91,7 @@ img {
 
 .showcase-content h1 {
     font-weight: 700;
-    font-size: 5.2rem;
+    font-size: 4.2rem;
     line-height: 1.1;
     margin: 0 0 2rem;
 }
@@ -98,9 +100,16 @@ img {
     text-transform: uppercase;
     color: #fff;
     font-weight: 400;
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     line-height: 1.25;
     margin: 0 0 2rem;
+}
+
+/* Tabs */
+.tabs {
+    background: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
 }
 
 /* Buttons */
