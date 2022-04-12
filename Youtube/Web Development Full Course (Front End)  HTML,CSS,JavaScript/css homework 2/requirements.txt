@@ -1,0 +1,12 @@
+[before]
+intro-webdesign.com/CSS/assignment-1/index.html
+intro-webdesign.com/CSS/assignment-1/teams.html
+intro-webdesign.com/CSS/assignment-1/history.html
+
+[after]
+intro-webdesign.com/CSS/assignment-1/index.jpg
+intro-webdesign.com/CSS/assignment-1/teams.jpg
+intro-webdesign.com/CSS/assignment-1/history.jpg
+
+
+- don't change the html files

@@ -1,0 +1,75 @@
+body {
+    margin: 20px 30px;
+    padding: 0;
+}
+
+header {
+    background: #b3b3b3;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Ultimate_Frisbee%2C_Jul_2009_-_17.jpg/1200px-Ultimate_Frisbee%2C_Jul_2009_-_17.jpg?20100130185151");
+}
+
+h1, h2 {  
+    text-transform: uppercase;  
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px; 
+}
+
+h2 {
+    color: #000000;
+}
+
+nav {
+    padding: 20px;
+    text-align: center;
+}
+
+a{
+    color: #000000;
+    text-align: center;
+}
+
+nav a {
+    background-color: #ffffff;
+    display: inline-block;
+    width: 15%;
+    line-height: 40px;
+    margin: 0 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);  /* Opacity for IE8 and lower */
+    zoom: 1;   /* Fix for IE7 */
+}
+
+.active {
+    opacity: 1;
+    background: #ffffff;
+    font-weight: bold;
+}
+
+main {
+    display: block;
+}
+
+img {
+    width: 70%;
+    border: 1px solid #000000;
+    margin: 10px 0;
+}
+
+.left {
+    background-color: #b3b3b3;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.right {
+    float: right;
+    width: 73%;
+}
