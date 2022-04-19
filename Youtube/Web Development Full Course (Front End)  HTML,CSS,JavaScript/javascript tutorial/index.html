@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Javascript tutorial">
+    <meta name="keywords" content="HTML Javascript">
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/App.js"></script>
+</head>
+<body onload="message('LOAD')" onresize="message('RESIZE')">
+    <h1>JavaScript Events - Responding to Events</h1>
+    <p onclick="message('CLICK')">It is possible to call functions based on Events</p>
+    <p>Click on the paragraph above to trigger an <em>onclick</em> event. Reload the page to see an onload event</p>
+
+    <p id="output"></p>
+
+    <button type="button" onclick="displayDate()">Display Date</button>
+    <p id="date">-</p>
+
+    <br>
+
+    <button type="button" onclick="firstButton()">First Button</button>
+    <button type="button" onclick="secondButton()">Second Button</button>
+    <p>This will not change</p>
+    <p id="change">This will change</p>
+    <p>This will not change</p>
+
+    <br>
+
+    <button type="button" onclick="openMe()">Open</button>
+    <button type="button" onclick="closeMe()">Close</button>
+    <p id="openclose">This will be open or close depending on the above buttons.</p>
+
+</body>
+</html>
