@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="js/App.js"></script>
+
 </head>
 <body onload="message('LOAD')" onresize="message('RESIZE')">
     <h1>JavaScript Events - Responding to Events</h1>
@@ -21,7 +22,7 @@
     <button type="button" onclick="displayDate()">Display Date</button>
     <p id="date">-</p>
 
-    <br>
+    <hr>
 
     <button type="button" onclick="firstButton()">First Button</button>
     <button type="button" onclick="secondButton()">Second Button</button>
@@ -29,11 +30,45 @@
     <p id="change">This will change</p>
     <p>This will not change</p>
 
-    <br>
+    <hr>
 
     <button type="button" onclick="openMe()">Open</button>
     <button type="button" onclick="closeMe()">Close</button>
     <p id="openclose">This will be open or close depending on the above buttons.</p>
+
+    <hr>
+
+    <p onclick="console.log(this.innerHTML)">"this" course</p>
+    <img src="images/cropped-resized-lucy.jpg" alt="the cutest cat" onclick="console.log(this.alt)">
+    <p>Click on the ["this" course] paragrah or the image and open console in inspect element</p>
+
+    <hr>
+
+    <p id="txt-001" onclick="display(this)">"this" course</p>
+    <img src="images/cropped-resized-lucy.jpg" alt="lucy" id='img-001' onclick="display(this)">
+    <p>Click on the ["this" course] paragrah or the image and open console in inspect element to see reusable function in action</p>
+
+    <hr>
+
+    <div class="pokemon-section">
+        <h2 id="message-pokemon">Hover over an image</h2>
+        <img class="pokemon" src="images/pikachu.png" alt="pikachuuuuuu" onmouseover="showProperties(this); txtYellow();" onmouseleave="imgMouseLeave(); txtBlack();">
+        <img class="pokemon" src="images/charmander.jpg" alt="charmandeeeeeer" onmouseover="showProperties(this); txtOrange();" onmouseleave="imgMouseLeave(); txtBlack();">
+        <img class="pokemon" src="images/bulbasaur.jpg" alt="bulbasauuuur" onmouseover="showProperties(this); txtGreen();" onmouseleave="imgMouseLeave(); txtBlack();">
+    </div>
+
+    <hr>
+
+    <div id = "image">
+		Hover over an image below to display here.
+	</div>
+	
+	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+    <hr>
+
 
 </body>
 </html>
