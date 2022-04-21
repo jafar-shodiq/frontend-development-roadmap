@@ -12,7 +12,7 @@
     <script src="js/App.js"></script>
 
 </head>
-<body onload="message('LOAD')" onresize="message('RESIZE')">
+<body onload="message('LOAD'); loadFruits();" onresize="message('RESIZE')">
     <h1>JavaScript Events - Responding to Events</h1>
     <p onclick="message('CLICK')">It is possible to call functions based on Events</p>
     <p>Click on the paragraph above to trigger an <em>onclick</em> event. Reload the page to see an onload event</p>
@@ -68,6 +68,9 @@
 	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
 
     <hr>
+
+    <button type="button" onclick="addFruit()">Add your favorite fruit</button>
+    <p id="fruits"></p>
 
 
 </body>

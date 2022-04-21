@@ -92,3 +92,19 @@ function unDo() {
        */
            
 }
+
+
+
+// JavaScript Arrays
+var fruits_init = ["Banana", "Orange", "Apple", "Mango"];
+
+function loadFruits() {
+    document.getElementById("fruits").innerHTML = fruits_init;
+}
+
+function addFruit() {
+    var fruit = prompt("What is your favorite fruit?");
+    fruits_init.push(fruit);
+    // fruits_init[fruits_init.length] = fruit
+    document.getElementById("fruits").innerHTML = fruits_init;
+}
