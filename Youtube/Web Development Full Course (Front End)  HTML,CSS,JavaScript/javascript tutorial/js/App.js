@@ -108,3 +108,38 @@ function addFruit() {
     // fruits_init[fruits_init.length] = fruit
     document.getElementById("fruits").innerHTML = fruits_init;
 }
+
+// Iterations
+var grades = [80, 56, 70, 92, 82, 84, 80, 66, 79, 81, 90];
+var sum = 0;
+
+for(i = 0; i < grades.length; i++) {
+    sum += grades[i];
+}
+
+console.log(grades);
+console.log("average grade (1): " + sum / grades.length);
+
+
+
+// Iterations and Conditionals
+var grades = [80, 56, , 92, 82, , , 66, 79, , 90];
+// var grades = [1, 1, , 1, 1, , , 1, 1, , 1];
+var sum = 0;
+var count = 0;
+
+console.log(grades);
+
+if (grades.length > 0) {
+    for (i = 0; i < grades.length; i++) {
+        if (typeof grades[i] == 'number') {
+            sum += grades[i];
+            count += 1; 
+        }
+    }
+    console.log("average grade (2): " + sum / count);
+}
+else {
+    console.log("empty array");
+}
+
