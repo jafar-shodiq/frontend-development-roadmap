@@ -76,28 +76,69 @@
 
     <form>
         <label for="username_a">Username: </label>
-        <input type="text" id="username_a" name="username"><br>
+        <input type="text" id="username_a" name="username" required><br>
         <label for="email_a">Email: </label>
-        <input type="email" id="email_a" name="email"><br>
-        <label for="pass_a">password: </label>
-        <input type="password" id="pass_a" name="password"><br>
+        <input type="email" id="email_a" name="email" required><br>
+        <label for="pass_a">Password: </label>
+        <input type="password" id="pass_a" name="password" required><br>
+        <label for="dob_a">Birth: </label>
+        <input type="date" id="dob_a" name="dob"><br> <!-- also test on other browser -->
 
-        <input type="radio" id="male_a" name="gender">
+        <input type="radio" id="male_a" name="gender" checked="true">
         <label for="male_a">Male </label><br>
         <input type="radio" id="female_a" name="gender">
         <label for="female_a">Female </label><br>
 
-        <input type="checkbox" id="vehicle1" name="vehicle1">
+        <input type="checkbox" id="vehicle1" name="vehicle">
         <label for="vehicle1"> I have a bike</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2">
+        <input type="checkbox" id="vehicle2" name="vehicle">
         <label for="vehicle2"> I have a car</label><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3">
+        <input type="checkbox" id="vehicle3" name="vehicle">
         <label for="vehicle3"> I have a boat</label><br>
 
-        <input type="submit" value="Submit">
+        <label for="num">Number: </label>
+        <input type="number" id="num" name="num1" max="1000"><br>
 
+        <label for="url_a">URL: </label>
+        <input type="url" id="url_a" name="url"><br>
+
+        <label for="color_a">Color: </label>
+        <input type="color" id="color_a" name="color"><br>
+
+        <label for="range_a">Range: </label>
+        <input type="range" id="range_a" name="range"><br>
+
+        <input type="submit" value="Click Here">
     </form>
 
+    <hr>
+
+    <form>
+        <label for="email_addr">Preferred email address: </label>
+        <input type="email" id="email_addr" name="email1" value="me@me.com" required><br>
+        <label for="email_repeat">Repeat email address: </label>
+        <input type="email" id="email_repeat" name="email2" required onchange="return check()"><br>
+
+        <input type="submit" value="Confirm email" onclick="return check()">
+    </form>
+
+    <hr>
+
+    <form>
+        <label for="fName_a">First Name: </label>
+        <input type="text" name="fName" id="fName_a" required><br>
+        <label for="lName_a">Last Name: </label>
+        <input type="text" name="lName" id="lName_a" required><br>
+        <label for="yesNick_a">Nickname?: </label>
+        <input type="checkbox" name="yesNick" id="yesNick_a" value="yes" onchange="nicknameFunction()"><br>
+
+        <div id="nick">
+            <label for="nickname_a">Nickname: </label>
+            <input type="text" name="nickname" id="nickname_a"><br>
+        </div>
+
+        <input type="submit" value="verify">
+    </form>
 
 </body>
 </html>
